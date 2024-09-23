@@ -1,0 +1,58 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+li{
+  display: flex;
+  list-style-type: none;
+}
+
+button{
+  padding: 5px 10px 5px 10px;
+  background-color: beige;
+  color: gray;
+}
+
+.supermercado{
+  display: flex;
+  flex-direction: row;
+}
+
+.product{
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 230px;
+  height: 50px;
+  background-color: green;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerSelectedProducts{
+  width: 300px;
+  display: block
+}
+
+.selectedProduct{
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 230px;
+  height: 50px;
+  background-color: rgba(3, 75, 3, 0.966);
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total{
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 5px;
+  text-align: left
+}
+
+
