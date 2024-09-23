@@ -96,14 +96,14 @@ function Fruteria(props){
                     {productesSeleccionats.map(ps =>
                         <li className="selectedProduct">
                             {ps.nom} ({ps.preu}€ /u) <br />
-                            {ps.unitats} * {ps.preu} = {ps.preu * ps.unitats}€
+                            {ps.unitats} * {ps.preu} = {(ps.preu * ps.unitats).toFixed(2)}€
                             <button name={ps.id} onClick={handleOnClickQuitar}>Quitar</button>
                         </li>
                     )}
                 </li>
                 <div className="total">
-            Total: {productesSeleccionats.reduce((acc, ps) => acc + (ps.preu * ps.unitats), 0)}€
-            </div>
+                    Total: {productesSeleccionats.reduce((t, ps) => (t*1 + (ps.preu * ps.unitats)).toFixed(2), 0)}€
+                </div>
             </ul>
             
         </div>
